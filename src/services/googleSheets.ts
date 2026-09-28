@@ -2,6 +2,8 @@ import { Category, Expense, Reminder } from '../types';
 
 export const TARGET_SPREADSHEET_ID = '1JXrLUxEdcABJsad2GEswL_zBbI1-r-QEuPPAeMsNvQY';
 
+const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxjltVko-5Icd6dO2R6R6yJRju_C5e5Z75rkOkQgLnvfunwEXzp3To6_ja2gFu54N4/exec';
+
 interface SheetMetadata {
   sheets?: Array<{
     properties?: {
