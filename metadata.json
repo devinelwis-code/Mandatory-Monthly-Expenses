@@ -1,0 +1,6 @@
+{
+  "name": "SpendSheet - Household Expense & Budget Tracker",
+  "description": "Smart monthly household expense tracker synced with Google Sheets, featuring visual spending analytics, recurring bill reminders, receipt attachments, and PDF monthly reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
