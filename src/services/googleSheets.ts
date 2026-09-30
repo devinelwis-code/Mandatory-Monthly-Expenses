@@ -1,4 +1,5 @@
 import { Category, Expense, Reminder } from '../types';
+export const TARGET_SPREADSHEET_ID = 'not-needed-anymore';
 
 export const TARGET_SPREADSHEET_ID = '1JXrLUxEdcABJsad2GEswL_zBbI1-r-QEuPPAeMsNvQY';
 
