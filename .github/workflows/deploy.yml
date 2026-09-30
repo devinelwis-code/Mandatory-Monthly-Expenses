@@ -26,7 +26,7 @@ jobs:
           node-version: 20
           
       - name: Install Dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
         
       - name: Build the App
         # This tells Vite to set the correct file paths for your specific GitHub repository
