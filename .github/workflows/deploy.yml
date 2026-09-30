@@ -26,10 +26,11 @@ jobs:
           node-version: 20
           
       - name: Install Dependencies
-        run: npm install --legacy-peer-deps
+        run: |
+          npm install --legacy-peer-deps
+          npm install tailwindcss postcss autoprefixer --legacy-peer-deps
         
       - name: Build the App
-        # This tells Vite to set the correct file paths for your specific GitHub repository
         run: npx vite build --base=/Mandatory-Monthly-Expenses/
         
       - name: Upload Files
