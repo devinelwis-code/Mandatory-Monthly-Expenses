@@ -1,7 +1,7 @@
 import { Category, Expense, Reminder } from '../types';
 
 // This satisfies App.tsx so it doesn't crash, but we don't actually need it anymore
-export const TARGET_SPREADSHEET_ID = 'not-needed-anymore';
+export const TARGET_SPREADSHEET_ID = '1JXrLUxEdcABJsad2GEswL_zBbI1-r-QEuPPAeMsNvQY';
 
 // Your live Google Apps Script Web App URL
 const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxjltVko-5Icd6dO2R6R6yJRju_C5e5Z75rkOkQgLnvfunwEXzp3To6_ja2gFu54N4/exec';
