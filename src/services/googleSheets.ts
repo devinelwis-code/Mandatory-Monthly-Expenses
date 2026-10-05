@@ -82,17 +82,22 @@ export class GoogleSheetsService {
       return [];
     }
   }
-
-  async syncAll(expenses: Expense[], categories: Category[], reminders: Reminder[]): Promise<void> {
+async syncAll(expenses: Expense[], categories: Category[], reminders: Reminder[]): Promise<void> {
     try {
+      const payload = {
+        action: 'syncAll',
+        expenses,
+        categories,
+        reminders
+      };
+
+      // Use standard form encoding for reliable Apps Script communication
       await fetch(WEB_APP_URL, {
         method: 'POST',
-        body: JSON.stringify({
-          action: 'syncAll',
-          expenses,
-          categories,
-          reminders
-        })
+        headers: {
+          'Content-Type': 'text/plain;charset=utf-8', // Required to bypass CORS preflight
+        },
+        body: JSON.stringify(payload)
       });
     } catch (e) {
       console.warn('Error syncing data:', e);
